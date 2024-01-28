@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poblano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img class="logo" src="../imagenes/Logo1.png" alt="Logo">
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="none" viewBox="0 0 24 24"
+                        strokeWidth={1.5} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./menu.html">Menú</a></li>
+                        <li><a href="./locaciones.html">Locaciones</a></li>
+                        <li><a href="./sobre_nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="./reservaciones.html">Reservaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="encabezadoLocalReserv">RESERVACIONES</h1>
+        <div class="contenedorReservaciones">
+            <div class="formulario">
+                <form>
+                    <div class="datosReserva">
+                        <input class="radio" type="radio" id="id_chanze" name="escojer_locacion">
+                        <label class="radio" for="id_chanze">chanze</label>
+                        <input type="radio" id="id_winterhude" name="escojer_locacion">
+                        <label class="radio" for="id_winterhude">winterhude</label>
+                    </div>
+                    <div class="datosReserva">
+                        <input itype="text" class="nombre" name="nombre" id="nombre" placeholder="Nombre">
+                        <label class="hidden" for="nombre">nombre</label>
+                    </div>
+                    <div class="datosReserva">
+                        <input type="number" class="persFechaHora" name="personas" id="no_personas" min="1" max="10"
+                            placeholder="Personas">
+                        <label class="hidden" for="no_personas">nombre</label>
+                        <input type="date" class="persFechaHora" name="fecha" id="fecha">
+                        <label class="hidden" for="fecha">nombre</label>
+                    </div>
+                    <div class="datosReserva">
+                        <input type="time" class="persFechaHora" name="hora" id="hora" value="11:00" min="11:00"
+                            max="21:00" step="600" required>
+                        <label class="hidden" for="hora">nombre</label>
+                    </div>
+                    <div class="datosReserva">
+                        <label for="comentario">Comentario:</label>
+                        <div>
+                            <textarea class="comentario" name="comentario" id="comentario" cols="30"
+                                rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="datosReserva">
+                        <input class="enviar" type="submit" value="Enviar" id="enviar">
+                    </div>
+                </form>
+            </div>
+            <div class="mapas">
+                <div class="mapa">
+                    <p>chanze</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9478.758157072301!2d9.954943249799243!3d53.5633093583532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f42354050bd%3A0xfdf9c3d67bdb3061!2sSchanzenstra%C3%9Fe%2095%2C%2020357%20Hamburg!5e0!3m2!1sde!2sde!4v1702539318150!5m2!1sde!2sde"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="mapa_chanze" id="mapa_chanze"></iframe>
+                </div>
+                <div class="mapa">
+                    <p>winterhude</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.608929278531!2d10.013765811564443!3d53.58259575690604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1892bc61c01db%3A0xb359fcfb5afd8e18!2sGertigstra%C3%9Fe%2035%2C%2022303%20Hamburg!5e0!3m2!1sde!2sde!4v1702539547669!5m2!1sde!2sde"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="mapa_winterhude"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="">
+                    <img class="icono" src="../imagenes/icons8-instagram-24.png" alt="Icono de Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="icono" src="../imagenes/icons8-facebook-24.png" alt="Icono de Facebook">
+                </a>
+            </li>
+        </ul>
+        <p>Poblano 2023. Todos los derechos Reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
