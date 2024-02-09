@@ -40,4 +40,11 @@ main {
             }
         }
     }
+
+    p.introLocacion{
+        @include fonts ("h1s", 25px, black, 100, center);
+        line-height: 45px;
+        margin: 80px 150px;
+    }
+
 }

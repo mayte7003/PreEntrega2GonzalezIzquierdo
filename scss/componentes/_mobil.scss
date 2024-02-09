@@ -76,6 +76,7 @@
                 
                 ul.listaPlatillos {
                     padding: 0px 15px 0px 50px;
+                    @include topBottom (0px, 0px);
 
                     li.platillo {
                         font-size: 15px;
@@ -108,14 +109,27 @@
                 order: -1;
             }
         }
+
+        p.introLocacion {
+            font-size: 12px;
+            margin: 20px 15px 20px 15px;
+            line-height: 15px;
+        }
+
     }
 
     /* Sobre nosotros */
 
     main {
+
         div.imgNosotros {
             height: 20vh;
             margin-top: 58px;
+        }
+
+        h1.h1Nosotros{
+            font-size: 25px;
+            margin-top: 50px;
         }
     }
 

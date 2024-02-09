@@ -231,6 +231,15 @@ main div.columnas div.contenedorInfFotos p.locacionInfo {
   padding-bottom: 15px;
   font-size: 16px;
 }
+main p.introLocacion {
+  font-family: "h1s";
+  font-size: 25px;
+  color: black;
+  font-weight: 100;
+  text-align: center;
+  line-height: 45px;
+  margin: 80px 150px;
+}
 
 /*Estilos de sobre nosotros*/
 main div.imgNosotros {
@@ -243,7 +252,7 @@ main div.imgNosotros {
 }
 main h1.h1Nosotros {
   font-family: "h1s";
-  font-size: 25px;
+  font-size: 40px;
   color: black;
   font-weight: 100;
   text-align: center;
@@ -255,6 +264,7 @@ main div.columnas div.contenedorInfFotos h2.conceptoSabor {
   margin-bottom: 50px;
 }
 main div.columnas div.contenedorInfFotos p.leyenda {
+  font-size: 20px;
   margin-top: 20px;
 }
 
@@ -331,7 +341,7 @@ main div.contenedorReservaciones div.mapas div.mapa {
     height: 30vh;
     margin-top: 100px;
   }
-  main p.pNosotros {
+  main h1.h1Nosotros {
     margin-top: 100px;
     padding: 0px 20px;
   }
@@ -416,6 +426,8 @@ main div.contenedorReservaciones div.mapas div.mapa {
   }
   main section div.columnas ul.listaPlatillos {
     padding: 0px 15px 0px 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   main section div.columnas ul.listaPlatillos li.platillo {
     font-size: 15px;
@@ -435,10 +447,19 @@ main div.contenedorReservaciones div.mapas div.mapa {
   main div.columnas div.orden:nth-child(2) {
     order: -1;
   }
+  main p.introLocacion {
+    font-size: 12px;
+    margin: 20px 15px 20px 15px;
+    line-height: 15px;
+  }
   /* Sobre nosotros */
   main div.imgNosotros {
     height: 20vh;
     margin-top: 58px;
+  }
+  main h1.h1Nosotros {
+    font-size: 25px;
+    margin-top: 50px;
   }
   /* Reservaciones */
   main div.contenedorReservaciones {
