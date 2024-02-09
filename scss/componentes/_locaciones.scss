@@ -1,0 +1,43 @@
+// Estilos de locaciones
+
+@import "../base/variables";
+@import "../base/mixin";
+
+//Nesting
+
+main {
+    h1.encabezadoLocalReserv {
+        @include topBottom (280px, 50px);
+    }
+
+    div.columnas {
+        justify-content: center;
+
+        div.contenedorInfFotos {
+            @include contenedores (40%, auto);
+            @include flex (1 200px, center);
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid $colorDeco;
+
+            h2.tituloLocacion {
+                @include fonts ("h1s", 30px, black, 100, center);
+                padding-bottom: 10px;
+            }
+
+            a.reservarLink {
+                color: black;
+            }
+
+            a:hover {
+                color: $colorDeco;
+                font-weight: bold;
+            }
+
+            p.locacionInfo {
+                padding-bottom: 15px;
+                font-size: 16px;
+            }
+        }
+    }
+}

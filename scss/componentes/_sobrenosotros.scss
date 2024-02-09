@@ -1,0 +1,32 @@
+// Estilos de sobre nosotros
+
+@import "../base/variables";
+@import "../base/mixin";
+
+// Nesting
+
+main {
+    div.imgNosotros {
+        @include contenedores (auto, 70vh);
+        @include grid (grid, repeat(2, 1fr), 1 auto);
+        margin-top: 135px;
+    }
+
+    h1.h1Nosotros {
+        @include fonts ("h1s", 25px, black, 100, center);
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    div.columnas {
+        div.contenedorInfFotos {
+            h2.conceptoSabor {
+                @include topBottom (80px, 50px);
+            }
+
+            p.leyenda {
+                margin-top: 20px;
+            }
+        }
+    }
+}

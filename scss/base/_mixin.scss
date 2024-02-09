@@ -1,0 +1,46 @@
+//  Estilos de imágenes
+@mixin imgs ($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}                                                            
+
+// Estilos de títulos y párrafos
+@mixin fonts ($family, $size, $color, $weight, $textAlign) {
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    text-align: $textAlign;
+}  
+
+// Estilos grid
+
+@mixin grid ($display, $columns, $rows ) {
+    display: $display;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}
+
+@mixin flex ($flex, $textalign) {
+    flex: $flex;
+    text-align: $textalign;
+}
+
+// Estilos margen top y botton
+@mixin topBottom ($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+// Estilos de contenedores
+@mixin contenedores ($width, $height) {
+    width: $width;
+    height: $height; 
+}
+
+// Estilos de cajas y botones
+@mixin cajas {
+   border: 2px solid $colorDeco;
+   border-radius: 10px; 
+}

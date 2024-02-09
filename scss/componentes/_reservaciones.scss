@@ -1,0 +1,68 @@
+// Estilos de reservaciones
+
+@import "../base/variables";
+@import "../base/mixin";
+
+//Nesting
+
+main {
+    div.contenedorReservaciones {
+        display: flex;
+        margin: 0px 80px 40px 80px;
+
+        div.formulario {
+            @include flex (2, left);
+
+            form {
+                div.datosReserva {
+                    padding-bottom: 5px;
+
+                    label {
+                        font-weight: bold;
+                    }
+
+                    label.hidden {
+                        display: none;
+                    }
+
+                    label.radio {
+                        font-size: 30px;
+                    }
+
+                    input.nombre {
+                        @include contenedores (400px, 40px);
+                        @include cajas;
+                    }
+
+                    input.persFechaHora {
+                        @include contenedores (197px, 40px);
+                        @include cajas;
+                    }
+
+                    textarea.comentario {
+                        @include contenedores (400px, 200px);
+                        @include cajas;
+                    }
+
+                    input.enviar {
+                        @include contenedores (400px, 40px);
+                        @include cajas;
+                        background-color: $colorDeco;
+                        color: $colorContraste;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        div.mapas {
+            @include flex (1, left);
+            margin-left: 80px;
+            font-weight: bold;
+
+            div.mapa {
+                margin-top: 10px;
+            }
+        }
+    }
+}

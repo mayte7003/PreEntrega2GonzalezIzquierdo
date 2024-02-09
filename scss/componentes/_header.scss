@@ -1,0 +1,43 @@
+// Estilos de header
+
+@import "../base/variables";
+@import "../base/mixin";
+
+// Nesting
+
+header {
+    background-color: $colorDeco;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid;
+    border-color: $colorContraste;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        img.logo {
+            @include imgs(250px, auto);
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                padding: 25px;
+
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: $colorContraste;
+                }
+
+                a:hover {
+                    border-bottom: 2px solid $colorContraste;
+                }
+            }
+        }
+    }
+}

@@ -1,123 +1,120 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "h1s";
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: "h2s";
+  src: url(../fonts/Roboto_Serif/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "tiempos";
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: "parrafos";
+  src: url(../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+/*Reset y estilos generales*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: 'h1s';
-  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
-}
-
-@font-face {
-  font-family: 'h2s';
-  src: url(../fonts/Roboto_Serif/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
-}
-
-@font-face {
-  font-family: 'tiempos';
-  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
-}
-
-@font-face {
-  font-family: 'parrafos';
-  src: url(../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
-}
-
-/* Estilos generales */
-html {
-  font-family: 'parrafos', sans-serif;
+  font-family: "parrafos", sans-serif;
 }
 
 body {
   width: 100%;
-  background: whitesmoke;
+  min-height: 100vh;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
+img.imgs {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.columnas {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/*Estilos de header*/
 header {
-  background: rgb(1, 53, 41);
+  background-color: rgb(1, 53, 41);
   width: 100%;
   position: fixed;
-  margin: 0;
   border-bottom: 1px solid;
   border-color: white;
-}
-
-header {
   display: flex;
-  padding: 1rem;
   justify-content: space-around;
-  align-items: center;
 }
-
 header a img.logo {
   width: 250px;
   height: auto;
+  object-fit: cover;
 }
-
 header nav ul {
   display: flex;
   list-style: none;
 }
-
 header nav ul li {
   padding: 25px;
 }
-
 header nav ul li a {
   text-decoration: none;
   font-weight: bold;
   color: white;
 }
-
 header nav ul li a:hover {
   border-bottom: 2px solid white;
 }
 
+/*Estilos de footer*/
 footer {
-  background: rgb(0, 33, 26);
+  background-color: rgb(1, 53, 41);
   margin-top: auto;
 }
-
 footer ul {
   text-align: right;
   margin-right: 20px;
 }
-
 footer ul li {
   list-style: none;
   padding-right: 20px;
   padding-top: 10px;
   display: inline-block;
 }
-
 footer ul li img.icono {
   width: 30px;
   height: auto;
+  object-fit: cover;
 }
-
 footer p {
+  font-family: "parrafos";
+  font-size: 13px;
   color: white;
   font-weight: 400;
-  font-size: 13px;
   text-align: center;
-  padding-top: 10px;
+  margin-bottom: 0px;
 }
 
-/* Index */
-
+/*Estilos de index*/
 main img.inicio {
   width: 100%;
   height: auto;
-  margin-top: 155px;
+  object-fit: cover;
+  margin-top: 135px;
 }
-
 main p.intro {
-  font-family: 'h1s', sans-serif;
+  font-family: "h1s";
   font-size: 25px;
+  color: black;
+  font-weight: 100;
   text-align: center;
   line-height: 45px;
   margin: 80px 150px;
@@ -127,424 +124,345 @@ aside ul {
   text-align: center;
   margin-bottom: 60px;
 }
-
-aside li {
-  list-style: none;
-  font-size: larger;
+aside ul li {
+  font-family: "parrafos";
+  font-size: 25px;
+  color: rgb(1, 53, 41);
+  font-weight: 550;
   text-align: center;
-  margin: 25px;
+  list-style: none;
   display: inline-block;
-  font-weight: 500;
+  justify-content: center;
+  padding: 25px;
 }
-
 aside ul li a.enlaces {
-  font-family: 'h1s', sans-serif;
+  font-family: "h1s";
   color: black;
 }
-
-aside ul li a.enlaces:hover {
-  font-family: 'h1s', sans-serif;
-  color: rgb(0, 33, 26);
+aside ul li a:hover {
+  font-family: "h1s";
+  font-size: 25px;
+  color: rgb(1, 53, 41);
   font-weight: bold;
+  text-align: center;
 }
 
-
-/* Menú */
-
+/*Estilos de menú*/
 main h1 {
-  font-family: 'h1s', sans-serif;
-  color: black;
+  font-family: "h1s";
   font-size: 40px;
+  color: black;
   font-weight: 500;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 80px;
 }
-
-img.imgs {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 main section div.contenedorTiempos div.imgTiempos {
   height: 20vp;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100%;
 }
-
 main section div.contenedorTiempos h2.tiempos {
-  font-family: 'tiempos', sans-serif;
-  color: rgb(233, 228, 228);
+  font-family: "tiempos";
+  font-size: 45px;
+  color: white;
   font-weight: bolder;
+  text-align: center;
   width: 100%;
   height: 175px;
-  font-size: 45px;
   letter-spacing: 4px;
-  text-align: center;
-  margin-top: -150px;
+  margin-top: -155px;
 }
-
-div.columnas {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-
 main section div.columnas ul.listaPlatillos {
+  flex: 1 200px;
   text-align: left;
   padding: 50px 50px 50px 80px;
-  flex: 1 200px;
 }
-
 main section div.columnas ul.listaPlatillos li.platillo {
-  font-family: 'parrafos', sans-serif;
-  color: black;
+  font-family: "parrafos";
   font-size: 20px;
+  color: black;
   font-weight: bold;
+  text-align: left;
   padding-top: 3px;
-  list-style-type: none;
+  list-style: none;
 }
-
 main section div.columnas ul.listaPlatillos p {
-  font-family: 'parrafos', sans-serif;
+  font-family: "parrafos";
 }
-
 main section div.columnas ul.listaPlatillos p.opcion {
   margin-bottom: 0px;
 }
 
-/* Localizaciones*/
-
+/*Estilos de loacciones*/
 main h1.encabezadoLocalReserv {
   margin-top: 280px;
   margin-bottom: 50px;
 }
-
-div.columnas {
+main div.columnas {
   justify-content: center;
 }
-
 main div.columnas div.contenedorInfFotos {
   width: 40%;
   height: auto;
+  flex: 1 200px;
+  text-align: center;
   padding: 20px;
   margin: 20px;
-  border: 1px solid;
-  border-color: rgb(1, 53, 41);
-  flex: 1 200px;
+  border: 1px solid rgb(1, 53, 41);
 }
-
 main div.columnas div.contenedorInfFotos h2.tituloLocacion {
-  font-family: 'h1s';
+  font-family: "h1s";
   font-size: 30px;
+  color: black;
   font-weight: 100;
+  text-align: center;
   padding-bottom: 10px;
 }
-
 main div.columnas div.contenedorInfFotos a.reservarLink {
-  color: #000;
+  color: black;
 }
-
+main div.columnas div.contenedorInfFotos a:hover {
+  color: rgb(1, 53, 41);
+  font-weight: bold;
+}
 main div.columnas div.contenedorInfFotos p.locacionInfo {
   padding-bottom: 15px;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
-/* Sobre Nosotros*/
-
+/*Estilos de sobre nosotros*/
 main div.imgNosotros {
+  width: auto;
   height: 70vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1 auto;
-  margin-top: 155px;
+  margin-top: 135px;
 }
-
-main p.pNosotros {
-  font-family: 'h1s', sans-serif;
+main h1.h1Nosotros {
+  font-family: "h1s";
   font-size: 25px;
+  color: black;
+  font-weight: 100;
   text-align: center;
   margin-top: 80px;
   margin-bottom: 50px;
 }
-
 main div.columnas div.contenedorInfFotos h2.conceptoSabor {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
-
 main div.columnas div.contenedorInfFotos p.leyenda {
   margin-top: 20px;
 }
 
-/* Reservaciones*/
-
+/*Estilos de reservaciones*/
 main div.contenedorReservaciones {
   display: flex;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-bottom: 40px;
+  margin: 0px 80px 40px 80px;
 }
-
 main div.contenedorReservaciones div.formulario {
-  text-align: left;
   flex: 2;
+  text-align: left;
 }
-
 main div.contenedorReservaciones div.formulario form div.datosReserva {
   padding-bottom: 5px;
 }
-
 main div.contenedorReservaciones div.formulario form div.datosReserva label {
   font-weight: bold;
 }
-
 main div.contenedorReservaciones div.formulario form div.datosReserva label.hidden {
   display: none;
 }
-
 main div.contenedorReservaciones div.formulario form div.datosReserva label.radio {
   font-size: 30px;
 }
-
 main div.contenedorReservaciones div.formulario form div.datosReserva input.nombre {
   width: 400px;
   height: 40px;
-  border: 2px solid;
-  border-color: rgb(1, 53, 41);
+  border: 2px solid rgb(1, 53, 41);
   border-radius: 10px;
 }
-
 main div.contenedorReservaciones div.formulario form div.datosReserva input.persFechaHora {
   width: 197px;
   height: 40px;
-  border: 2px solid;
-  border-color: rgb(1, 53, 41);
+  border: 2px solid rgb(1, 53, 41);
   border-radius: 10px;
-
 }
-
 main div.contenedorReservaciones div.formulario form div.datosReserva textarea.comentario {
   width: 400px;
   height: 200px;
-  border: 2px solid;
-  border-color: rgb(1, 53, 41);
+  border: 2px solid rgb(1, 53, 41);
   border-radius: 10px;
 }
-
 main div.contenedorReservaciones div.formulario form div.datosReserva input.enviar {
   width: 400px;
   height: 40px;
+  border: 2px solid rgb(1, 53, 41);
+  border-radius: 10px;
+  background-color: rgb(1, 53, 41);
   color: white;
   font-weight: bold;
-  border: 2px solid;
-  background-color: rgb(1, 53, 41);
-  border-radius: 10px;
 }
-
 main div.contenedorReservaciones div.mapas {
-  font-weight: bold;
-  margin-left: 80px;
-  text-align: left;
   flex: 1;
+  text-align: left;
+  margin-left: 80px;
+  font-weight: bold;
 }
-
 main div.contenedorReservaciones div.mapas div.mapa {
   margin-top: 10px;
 }
 
-/* Estilos de tablet */
-
-@media screen and (max-width:1024px) {
-
-  /* Estilos generales */
-
+/*Estilos de tablet*/
+@media screen and (max-width: 1042px) {
+  /*Estilos generales*/
   header a img.logo {
     width: 150px;
   }
-
-  /* Index */
-
+  /*Index*/
   main img.inicio {
-    margin-top: 141px;
+    margin-top: 108px;
   }
-
-  /* sobre nosotros */
-
+  /*Sobre Nosotros*/
   main div.imgNosotros {
     height: 30vh;
     margin-top: 100px;
   }
-
   main p.pNosotros {
     margin-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0px 20px;
   }
-
-  /* Reservaciones */
-
+  /*Reservaciones*/
   main div.contenedorReservaciones div.formulario {
     width: 380px;
     margin: 25px 15px 20px 15px;
   }
-
 }
-
-@media screen and (max-width:991px) {
-
+/*Estilos de tablet small*/
+@media screen and (max-width: 991px) {
   /* Estilos generales */
-
   header {
     align-items: start;
   }
-
   header a img.logo {
     width: 100px;
   }
-
   header nav.navbar div.container-fluid button.navbar-toggler {
     margin-top: 0px;
     color: white;
     border: none;
   }
-
   header nav.navbar div.container-fluid button.navbar-toggler:focus {
     box-shadow: none;
   }
-
-  header nav ul {
+  header nav.navbar div.container-fluid div.collapse ul {
     display: inline-block;
   }
-
+  /*Index*/
+  main img.inicio {
+    margin-top: 58px;
+  }
+  /*Sobre nosotros*/
+  main div.imgNosotros {
+    margin-top: 58px;
+  }
   /*Reservaciones  */
-
   main div.contenedorReservaciones div.mapas div.mapa {
     display: none;
   }
 }
-
-/* Estilos de mobile */
-
-@media screen and (max-width:600px) {
-
-  /* Index */
-
-  main img.inicio {
-    margin-top: 89px;
+/*Estilos de mobil*/
+@media screen and (max-width: 600px) {
+  /*Estilos generales*/
+  div.columnas {
+    flex-direction: column;
   }
-
+  /* Index */
+  main img.inicio {
+    margin-top: 58px;
+    margin-bottom: 40px;
+  }
   main p.intro {
-    font-size: 10px;
+    font-size: 12px;
     margin: 40px 15px 0px 15px;
     line-height: 15px;
   }
-
   aside ul li a.enlaces {
-    font-size: 10px;
+    font-size: 11px;
   }
-
   footer ul {
     margin-right: 5px;
   }
-
   footer ul li {
     padding-right: 10px;
   }
-
-  footer ul li img.icono {
-    width: 20px;
-  }
-
   footer p {
     font-size: 10px;
   }
-
   /* Menú */
-
   main h1 {
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
-
   main section div.contenedorTiempos h2.tiempos {
     font-size: 20px;
     height: 70px;
     letter-spacing: 4px;
     margin-top: -50px;
   }
-
-  div.columnas {
-    flex-direction: column;
-  }
-
   main section div.columnas ul.listaPlatillos {
     padding: 0px 15px 0px 50px;
   }
-
   main section div.columnas ul.listaPlatillos li.platillo {
     font-size: 15px;
   }
-
   main section div.columnas ul.listaPlatillos p {
     font-size: 14px;
   }
-
   /* Locaciones */
-
   main h1.encabezadoLocalReserv {
     font-size: 30px;
     margin-top: 130px;
     margin-bottom: 15px;
   }
-
   main div.columnas div.contenedorInfFotos {
     width: 90%;
   }
-
   main div.columnas div.orden:nth-child(2) {
     order: -1;
   }
-
   /* Sobre nosotros */
-
   main div.imgNosotros {
     height: 20vh;
-    margin-top: 90px;
+    margin-top: 58px;
   }
-
-
   /* Reservaciones */
   main div.contenedorReservaciones {
     margin-left: 20px;
   }
-
   main div.contenedorReservaciones div.formulario {
     flex: 1;
     margin: 25px 0px 20px 0px;
   }
-
   main div.contenedorReservaciones div.formulario form div.datosReserva label.radio {
     font-size: 20px;
   }
-
   main div.contenedorReservaciones div.formulario form div.datosReserva input.nombre {
     width: 350px;
   }
-
   main div.contenedorReservaciones div.formulario form div.datosReserva input.persFechaHora {
     width: 100px;
   }
-
   main div.contenedorReservaciones div.formulario form div.datosReserva textarea.comentario {
     width: 350px;
   }
-
   main div.contenedorReservaciones div.formulario form div.datosReserva input.enviar {
     width: 350px;
   }
-
 }
+
+/*# sourceMappingURL=style.css.map */

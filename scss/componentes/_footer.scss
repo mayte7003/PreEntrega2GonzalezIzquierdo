@@ -1,0 +1,33 @@
+// Estilos de footer
+
+@import "../base/variables";
+@import "../base/mixin";
+
+// Nesting
+
+footer {
+    background-color: $colorDeco;
+    margin-top: auto;
+
+    ul {
+        text-align: right;
+        margin-right: 20px;
+
+        li {
+            list-style: none;
+            padding-right: 20px;
+            padding-top: 10px;
+            display: inline-block;
+
+            img.icono {
+                @include imgs (30px, auto);
+            }
+
+        }
+    }
+
+    p {
+        @include fonts ("parrafos", 13px, $colorContraste, 400, center);
+        margin-bottom: 0px;
+    }
+}

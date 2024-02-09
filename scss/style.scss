@@ -1,0 +1,59 @@
+// import
+
+@font-face {
+    font-family: 'h1s';
+    src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+@font-face {
+    font-family: 'h2s';
+    src: url(../fonts/Roboto_Serif/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'tiempos';
+    src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+@font-face {
+    font-family: 'parrafos';
+    src: url(../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+@import "./base/variables";
+
+@import "./base/mixin";
+
+/*Reset y estilos generales*/
+@import "./componentes/reset";
+
+/*Estilos de header*/
+@import "./componentes/header";
+
+/*Estilos de footer*/
+@import "./componentes/footer";
+
+/*Estilos de index*/
+@import "./componentes/_index";
+
+/*Estilos de menú*/
+@import "./componentes/menu";
+
+/*Estilos de loacciones*/
+@import "./componentes/locaciones";
+
+/*Estilos de sobre nosotros*/
+@import "./componentes/sobrenosotros";
+
+/*Estilos de reservaciones*/
+@import "./componentes/reservaciones";
+
+/*Estilos de tablet*/
+@import "./componentes/tablet";
+
+/*Estilos de tablet small*/
+@import "./componentes/tabletsmall";
+
+/*Estilos de mobil*/
+@import "./componentes/mobil";
+

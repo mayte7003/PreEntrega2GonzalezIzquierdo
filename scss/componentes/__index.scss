@@ -1,0 +1,44 @@
+// Estlios de index
+
+@import "../base/variables";
+@import "../base/mixin";
+
+//Nesting
+
+main {
+    img.inicio {
+        @include imgs (100%, auto);
+        margin-top: 135px;
+    }
+
+    p.intro {
+        @include fonts ("h1s", 25px, black, 100, center);
+        line-height: 45px;
+        margin: 80px 150px;
+    }
+}
+
+aside {
+    ul {
+        text-align: center;
+        margin-bottom: 60px;
+
+        li {
+            @include fonts ("parrafos", 25px, $colorDeco, 550, center);
+            list-style: none;
+            display: inline-block;
+            justify-content: center;
+            padding: 25px;
+
+            a.enlaces {
+                font-family: "h1s";
+                color: black;
+            }
+
+            a:hover {
+                @include fonts ("h1s", 25px, $colorDeco, bold, center);
+            }
+        }
+    }
+
+}

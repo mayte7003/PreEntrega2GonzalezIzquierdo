@@ -1,0 +1,52 @@
+// Estilos de tablet
+
+@import "../base/variables";
+@import "../base/mixin";
+
+//Nesting
+@media screen and (max-width:1042px) {
+
+    /*Estilos generales*/
+
+    header {
+        a {
+            img.logo {
+                width: 150px;
+            }
+        }
+    }
+
+    /*Index*/
+
+    main {
+        img.inicio {
+            margin-top: 108px;
+        }
+    }
+
+    /*Sobre Nosotros*/
+
+    main {
+        div.imgNosotros {
+            height: 30vh;
+            margin-top: 100px;
+        }
+
+        p.pNosotros {
+            margin-top: 100px;
+            padding: 0px 20px;
+        }
+    }
+
+    /*Reservaciones*/
+
+    main {
+        div.contenedorReservaciones {
+            div.formulario {
+                width: 380px;
+                margin: 25px 15px 20px 15px;
+            }
+        }
+    }
+
+}

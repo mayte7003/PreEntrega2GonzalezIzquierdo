@@ -1,0 +1,158 @@
+// Estilos de mobil
+
+@import "../base/variables";
+@import "../base/mixin";
+
+//Nesting
+@media screen and (max-width:600px) {
+
+    /*Estilos generales*/
+
+    div.columnas {
+        flex-direction: column;
+    }
+
+
+    /* Index */
+
+    main {
+        img.inicio {
+            @include topBottom (58px,40px)
+
+        }
+
+        p.intro {
+            font-size: 12px;
+            margin: 40px 15px 0px 15px;
+            line-height: 15px;
+        }
+    
+    }
+
+    aside {
+        ul {
+            li {
+                a.enlaces {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+
+    footer {
+        ul {
+            margin-right: 5px;
+
+            li {
+                padding-right: 10px;
+            }
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+    /* Menú */
+
+    main {
+        h1 {
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            div.contenedorTiempos {
+                h2.tiempos {
+                    font-size: 20px;
+                    height: 70px;
+                    letter-spacing: 4px;
+                    margin-top: -50px;
+                }
+            }
+
+            div.columnas {
+                
+                ul.listaPlatillos {
+                    padding: 0px 15px 0px 50px;
+
+                    li.platillo {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    /* Locaciones */
+
+    main {
+        h1.encabezadoLocalReserv {
+            font-size: 30px;
+            margin-top: 130px;
+            margin-bottom: 15px;
+        }
+
+        div.columnas {
+            div.contenedorInfFotos {
+                width: 90%;
+            }
+
+            div.orden:nth-child(2) {
+                order: -1;
+            }
+        }
+    }
+
+    /* Sobre nosotros */
+
+    main {
+        div.imgNosotros {
+            height: 20vh;
+            margin-top: 58px;
+        }
+    }
+
+    /* Reservaciones */
+
+    main {
+        div.contenedorReservaciones {
+            margin-left: 20px;
+
+            div.formulario {
+                flex: 1;
+                margin: 25px 0px 20px 0px;
+
+                form {
+                    div.datosReserva {
+                        label.radio {
+                            font-size: 20px;
+                        }
+
+                        input.nombre {
+                            width: 350px;
+                        }
+
+                        input.persFechaHora {
+                            width: 100px;
+                        }
+
+                        textarea.comentario {
+                            width: 350px;
+                        }
+
+                        input.enviar {
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

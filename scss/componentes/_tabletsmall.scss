@@ -1,0 +1,73 @@
+//Estilos de table chica
+
+@import "../base/variables";
+@import "../base/mixin";
+
+// Nesting
+
+@media screen and (max-width:991px) {
+
+  /* Estilos generales */
+
+  header {
+    align-items: start;
+
+    a {
+      img.logo {
+        width: 100px;
+      }
+    }
+
+    nav.navbar {
+      div.container-fluid {
+        button.navbar-toggler {
+          margin-top: 0px;
+          color: $colorContraste;
+          border: none;
+        }
+
+        button.navbar-toggler:focus {
+          box-shadow: none;
+        }
+
+        div.collapse {
+          ul {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  /*Index*/
+  
+  main {
+
+    img.inicio {
+      margin-top: 58px;
+  }
+  }
+
+  /*Sobre nosotros*/
+  
+  main {
+
+    div.imgNosotros {
+      margin-top: 58px;
+  }
+  }
+
+
+  /*Reservaciones  */
+
+  main {
+    div.contenedorReservaciones {
+      div.mapas {
+        div.mapa {
+          display: none;
+        }
+      }
+    }
+  }
+
+}

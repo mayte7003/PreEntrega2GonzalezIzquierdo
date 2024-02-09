@@ -1,0 +1,50 @@
+// Estilos de menú
+
+@import "../base/variables";
+@import "../base/mixin";
+
+// Nesting
+
+main {
+    h1 {
+        @include fonts ("h1s", 40px, black, 500, center);
+        @include topBottom (100px, 80px);
+    }
+
+    section {
+        div.contenedorTiempos {
+            div.imgTiempos {
+                height: 20vp;
+                @include grid (grid, repeat(3, 1fr), 100%);
+            }
+
+            h2.tiempos {
+                @include fonts ("tiempos", 45px, $colorContraste, bolder, center);
+                @include contenedores (100%, 175px);
+                letter-spacing: 4px;
+                margin-top: -155px;
+            }
+        }
+
+        div.columnas {
+            ul.listaPlatillos {
+                @include flex (1 200px, left);
+                padding: 50px 50px 50px 80px;
+
+                li.platillo {
+                    @include fonts ("parrafos", 20px, black, bold, left);
+                    padding-top: 3px;
+                    list-style: none;
+                }
+
+                p {
+                    font-family: "parrafos";
+                }
+
+                p.opcion {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
