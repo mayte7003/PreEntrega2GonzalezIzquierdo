@@ -17,8 +17,7 @@
 
     main {
         img.inicio {
-            @include topBottom (58px,40px)
-
+            @include topBottom (55px, 40px)
         }
 
         p.intro {
@@ -26,7 +25,7 @@
             margin: 40px 15px 0px 15px;
             line-height: 15px;
         }
-    
+
     }
 
     aside {
@@ -45,6 +44,10 @@
 
             li {
                 padding-right: 10px;
+
+                img.icono {
+                    @include imgs (20px, auto);
+                }
             }
         }
 
@@ -73,7 +76,7 @@
             }
 
             div.columnas {
-                
+
                 ul.listaPlatillos {
                     padding: 0px 15px 0px 50px;
                     @include topBottom (0px, 0px);
@@ -124,10 +127,10 @@
 
         div.imgNosotros {
             height: 20vh;
-            margin-top: 58px;
+            margin-top: 55px;
         }
 
-        h1.h1Nosotros{
+        h1.h1Nosotros {
             font-size: 25px;
             margin-top: 50px;
         }
