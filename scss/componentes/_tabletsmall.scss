@@ -40,23 +40,33 @@
   }
 
   /*Index*/
-  
-  main {
 
+  main {
     img.inicio {
       margin-top: 58px;
+    }
   }
+
+  /*Menú*/
+
+  main {
+    section {
+      div.contenedorTiempos {
+        h2.tiempos {
+          @include contenedores (100%, 115px);
+          margin-top: -105px;
+        }
+      }
+    }
   }
 
   /*Sobre nosotros*/
-  
-  main {
 
+  main {
     div.imgNosotros {
       margin-top: 58px;
+    }
   }
-  }
-
 
   /*Reservaciones  */
 
@@ -69,5 +79,4 @@
       }
     }
   }
-
 }

@@ -336,6 +336,10 @@ main div.contenedorReservaciones div.mapas div.mapa {
   main img.inicio {
     margin-top: 108px;
   }
+  /*Menú*/
+  main section div.contenedorTiempos h2.tiempos {
+    margin-top: -140px;
+  }
   /*Sobre Nosotros*/
   main div.imgNosotros {
     height: 30vh;
@@ -374,6 +378,12 @@ main div.contenedorReservaciones div.mapas div.mapa {
   /*Index*/
   main img.inicio {
     margin-top: 58px;
+  }
+  /*Menú*/
+  main section div.contenedorTiempos h2.tiempos {
+    width: 100%;
+    height: 115px;
+    margin-top: -105px;
   }
   /*Sobre nosotros*/
   main div.imgNosotros {
@@ -465,6 +475,9 @@ main div.contenedorReservaciones div.mapas div.mapa {
   main h1.h1Nosotros {
     font-size: 25px;
     margin-top: 50px;
+  }
+  main div.columnas div.contenedorInfFotos p.leyenda {
+    font-size: 15px;
   }
   /* Reservaciones */
   main div.contenedorReservaciones {

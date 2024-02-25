@@ -12,7 +12,6 @@
         flex-direction: column;
     }
 
-
     /* Index */
 
     main {
@@ -25,7 +24,6 @@
             margin: 40px 15px 0px 15px;
             line-height: 15px;
         }
-
     }
 
     aside {
@@ -41,7 +39,6 @@
     footer {
         ul {
             margin-right: 5px;
-
             li {
                 padding-right: 10px;
 
@@ -76,7 +73,6 @@
             }
 
             div.columnas {
-
                 ul.listaPlatillos {
                     padding: 0px 15px 0px 50px;
                     @include topBottom (0px, 0px);
@@ -89,7 +85,6 @@
                         font-size: 14px;
                     }
                 }
-
             }
         }
     }
@@ -118,13 +113,11 @@
             margin: 20px 15px 20px 15px;
             line-height: 15px;
         }
-
     }
 
     /* Sobre nosotros */
 
     main {
-
         div.imgNosotros {
             height: 20vh;
             margin-top: 55px;
@@ -133,6 +126,14 @@
         h1.h1Nosotros {
             font-size: 25px;
             margin-top: 50px;
+        }
+
+        div.columnas {
+            div.contenedorInfFotos {
+                p.leyenda {
+                    font-size: 15px;
+                }
+            }
         }
     }
 
