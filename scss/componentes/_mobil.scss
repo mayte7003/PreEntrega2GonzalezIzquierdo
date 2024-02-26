@@ -66,8 +66,8 @@
             div.contenedorTiempos {
                 h2.tiempos {
                     font-size: 20px;
-                    height: 70px;
                     letter-spacing: 4px;
+                    @include contenedores (100%, 70px);
                     margin-top: -50px;
                 }
             }
