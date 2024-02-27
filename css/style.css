@@ -302,7 +302,6 @@ main div.contenedorReservaciones div.formulario form div.datosReserva input.pers
   border: 2px solid rgb(1, 53, 41);
   border-radius: 10px;
   background-color: white;
-  display: inline-block;
 }
 main div.contenedorReservaciones div.formulario form div.datosReserva textarea.comentario {
   width: 400px;
