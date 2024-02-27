@@ -502,7 +502,7 @@ main div.contenedorReservaciones div.mapas div.mapa {
     width: 350px;
   }
   main div.contenedorReservaciones div.formulario form div.datosReserva input.persFechaHora {
-    width: 120px;
+    width: 150px;
   }
   main div.contenedorReservaciones div.formulario form div.datosReserva textarea.comentario {
     width: 350px;
