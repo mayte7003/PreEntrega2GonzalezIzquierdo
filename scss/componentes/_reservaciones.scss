@@ -37,6 +37,7 @@ main {
                     input.persFechaHora {
                         @include contenedores (197px, 40px);
                         @include cajas;
+                        display: inline-block;
                     }
 
                     textarea.comentario {
