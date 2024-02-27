@@ -394,8 +394,13 @@ main div.contenedorReservaciones div.mapas div.mapa {
     margin-top: 58px;
   }
   /*Reservaciones  */
+  main div.contenedorReservaciones div.formulario form div.persFecha {
+    display: flex;
+  }
   main div.contenedorReservaciones div.formulario form div.datosReserva input.persFechaHora {
     width: 150px;
+    display: block;
+    margin-right: 5px;
   }
   main div.contenedorReservaciones div.mapas div.mapa {
     display: none;
@@ -495,6 +500,9 @@ main div.contenedorReservaciones div.mapas div.mapa {
     flex: 1;
     margin: 25px 0px 20px 0px;
   }
+  main div.contenedorReservaciones div.formulario form div.persFecha {
+    display: flex;
+  }
   main div.contenedorReservaciones div.formulario form div.datosReserva label.radio {
     font-size: 20px;
   }
@@ -502,7 +510,9 @@ main div.contenedorReservaciones div.mapas div.mapa {
     width: 350px;
   }
   main div.contenedorReservaciones div.formulario form div.datosReserva input.persFechaHora {
-    width: 150px;
+    width: 120px;
+    display: block;
+    margin-right: 5px;
   }
   main div.contenedorReservaciones div.formulario form div.datosReserva textarea.comentario {
     width: 350px;

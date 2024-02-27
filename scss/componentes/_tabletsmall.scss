@@ -74,9 +74,15 @@
     div.contenedorReservaciones {
       div.formulario {
         form {
+
+          div.persFecha {
+            display: flex;
+        }
             div.datosReserva {
               input.persFechaHora {
                 width: 150px;
+                display: block;
+                margin-right: 5px;
               }
             }
           }
