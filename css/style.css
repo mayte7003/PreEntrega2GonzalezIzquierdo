@@ -294,24 +294,28 @@ main div.contenedorReservaciones div.formulario form div.datosReserva input.nomb
   height: 40px;
   border: 2px solid rgb(1, 53, 41);
   border-radius: 10px;
+  background-color: white;
 }
 main div.contenedorReservaciones div.formulario form div.datosReserva input.persFechaHora {
   width: 197px;
   height: 40px;
   border: 2px solid rgb(1, 53, 41);
   border-radius: 10px;
+  background-color: white;
 }
 main div.contenedorReservaciones div.formulario form div.datosReserva textarea.comentario {
   width: 400px;
   height: 200px;
   border: 2px solid rgb(1, 53, 41);
   border-radius: 10px;
+  background-color: white;
 }
 main div.contenedorReservaciones div.formulario form div.datosReserva input.enviar {
   width: 400px;
   height: 40px;
   border: 2px solid rgb(1, 53, 41);
   border-radius: 10px;
+  background-color: white;
   background-color: rgb(1, 53, 41);
   color: white;
   font-weight: bold;
@@ -390,6 +394,9 @@ main div.contenedorReservaciones div.mapas div.mapa {
     margin-top: 58px;
   }
   /*Reservaciones  */
+  main div.contenedorReservaciones div.formulario form div.datosReserva input.persFechaHora {
+    width: 150px;
+  }
   main div.contenedorReservaciones div.mapas div.mapa {
     display: none;
   }
@@ -482,7 +489,7 @@ main div.contenedorReservaciones div.mapas div.mapa {
   }
   /* Reservaciones */
   main div.contenedorReservaciones {
-    margin-left: 20px;
+    margin-left: 15px;
   }
   main div.contenedorReservaciones div.formulario {
     flex: 1;
@@ -495,7 +502,7 @@ main div.contenedorReservaciones div.mapas div.mapa {
     width: 350px;
   }
   main div.contenedorReservaciones div.formulario form div.datosReserva input.persFechaHora {
-    width: 100px;
+    width: 120px;
   }
   main div.contenedorReservaciones div.formulario form div.datosReserva textarea.comentario {
     width: 350px;

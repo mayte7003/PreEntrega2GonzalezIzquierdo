@@ -72,6 +72,16 @@
 
   main {
     div.contenedorReservaciones {
+      div.formulario {
+        form {
+            div.datosReserva {
+              input.persFechaHora {
+                width: 150px;
+              }
+            }
+          }
+        }
+
       div.mapas {
         div.mapa {
           display: none;

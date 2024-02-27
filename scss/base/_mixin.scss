@@ -43,4 +43,5 @@
 @mixin cajas {
    border: 2px solid $colorDeco;
    border-radius: 10px; 
+   background-color: $colorContraste;
 }
