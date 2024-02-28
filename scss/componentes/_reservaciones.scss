@@ -14,6 +14,10 @@ main {
             @include flex (2, left);
 
             form {
+                div.persFecha {
+                    display: flex;
+                }
+
                 div.datosReserva {
                     padding-bottom: 5px;
 
@@ -37,6 +41,8 @@ main {
                     input.persFechaHora {
                         @include contenedores (197px, 40px);
                         @include cajas;
+                        display: block;
+                        margin-right: 5px;
                     }
 
                     textarea.comentario {

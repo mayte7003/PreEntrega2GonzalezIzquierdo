@@ -147,10 +147,6 @@
                 margin: 25px 0px 20px 0px;
 
                 form {
-                    div.persFecha {
-                        display: flex;
-                    }
-
                     div.datosReserva {
                         label.radio {
                             font-size: 20px;
@@ -162,8 +158,6 @@
 
                         input.persFechaHora {
                             width: 120px;
-                            display: block;
-                            margin-right: 5px;
                         }
 
                         textarea.comentario {
